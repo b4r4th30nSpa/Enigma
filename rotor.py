@@ -22,7 +22,7 @@ class Rotor():
         codigoIda = self.rotorC[posicion]
         return codigoIda
         
-        #raise ValueError("{} no pertenece al abecedario".format(letra))--> tarea (ver min 4:02):validar entrada con esto
+        #raise ValueError("{} no pertenece al abecedario".format(letra))
 
 
     def posicionInicial(self, posIni=0):
