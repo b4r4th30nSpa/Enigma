@@ -1,2 +1,1 @@
-Simulador del concepto de la máquina enigma.
-Versión preliminar con un rotor y un reflector. 
+Simulador de Enigma M3 con 3 rotores y un reflector. 
