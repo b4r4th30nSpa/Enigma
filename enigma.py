@@ -115,10 +115,20 @@ class Enigma():
                 indice = rotor.decodifica(indice)
 
             cadenaCodificada += self.abecedario[indice] 
+        print(cadenaCodificada)
+        return cadenaCodificada  
 
-        return cadenaCodificada    
 
-  
+reflector = Reflector(abecedario, B)
+rotor_1 = Rotor(abecedario, juego['I'][0], juego['I'][1], orden =1)
+rotor_2 = Rotor(abecedario, juego['I'][0], juego['I'][1], orden = 2)
+rotor_3 = Rotor(abecedario, juego['I'][0], juego['I'][1], orden = 3)
 
+e = Enigma(abecedario, [rotor_1,rotor_2,rotor_3], reflector, ini='AAA')
+
+e.pos_ini()  
+e.codificaCadena('ABCEDEFGHIJKLMNOPQRSTUVWXYZ')
+e.pos_ini()  
+e.codificaCadena('UWDDNNAAWYSTCIRLYBTZXRAAHAN')
 
     
